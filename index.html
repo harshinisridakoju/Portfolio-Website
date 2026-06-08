@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harshini Sri Dakoju | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    nav h1 {
+      font-size: 20px;
+      color: #38bdf8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #f8fafc;
+      font-weight: bold;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 70px 20px;
+      gap: 40px;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+
+    .hero img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h3 {
+      color: #38bdf8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links a {
+      margin-right: 10px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #334155;
+      padding: 8px 14px;
+      border-radius: 20px;
+    }
+
+    .project-card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    button {
+      padding: 10px;
+      background: #38bdf8;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header>
+  <nav>
+    <h1>Harshini Sri</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="blue.jpg" alt="Profile"/>
+
+  <div class="hero-text">
+    <h3>Hello, I'm</h3>
+    <h1>Harshini Sri 👋</h1>
+
+    <p>B.Tech Student | Aspiring Full Stack Developer</p>
+    <p>Passionate about coding, problem solving and building web applications.</p>
+
+    <a class="btn" href="resume.pdf" download>📄 Download Resume</a>
+
+    <div class="links" style="margin-top:15px;">
+      <a href="https://github.com/harshinisridakoju" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/harshini-sri-dakoju/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a Computer Science Engineering student at Pragati Engineering College with strong interest in programming,
+      problem-solving, and software development. I am currently building my skills in data structures, algorithms,
+      SQL, C, HTML, and full stack web development.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">C</div>
+    <div class="skill">SQL</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">DSA</div>
+  </div>
+</section>
+
+<!-- PROJECTS (GITHUB READY) -->
+<section id="projects">
+  <h2>Projects (From GitHub + Academic)</h2>
+
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>Personal portfolio built using HTML & CSS.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Student Management System</h3>
+    <p>C-based project for managing student records using file handling.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>GitHub Projects (Auto Section)</h3>
+    <p>
+     <br><br>
+      • Repo 1: https://github.com/harshinisridakoju/SafeRide-AI-main<br>
+      • Repo 2: https://github.com/harshinisridakoju/Hybrid-QR-and-Barcode-communication-system<br>
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="card">
+    <p><strong>Email:</strong> harshinisridakojo@gmail.com</p>
+    <p><strong>Phone:</strong> 8341980847</p>
+    <p><strong>GitHub:</strong> github.com/harshinisridakojo</p>
+    <p><strong>LinkedIn:</strong> linkedin.com/in/harshini-sri-dakoju</p>
+  </div>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Harshini Sri | Portfolio Website | Built with ❤️
+</footer>
+
+</body>
+</html>
